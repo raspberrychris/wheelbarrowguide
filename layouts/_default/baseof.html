@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- 1st Google Tag Manager code -->
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PMQ3NR4');</script>
+    <!-- End Google Tag Manager -->
+
+
+  <!-- End Google Tag Manager -->
+
+  <!-- Global site tag (gtag.js) - FROM Google Analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BMV41CLR1Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BMV41CLR1Q');
+  </script>
+
+
+
+    <link rel="canonical" href="{{ .Permalink }}" itemprop="url" />
+    {{ if not .Site.BuildDrafts }}
+    {{ template "_internal/google_analytics_async.html" . }}
+    {{ end }}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      {{ block "title" . }}
+      {{ .Site.Title }}
+      {{ end }}
+    </title>
+    {{ with .Keywords }}
+    <meta content="{{ delimit . `, ` }}" name="keywords">
+    {{ end }}
+    {{ if .Description }}
+    <meta name="description" property="og:description" content="{{ .Description }}|{{ .Site.Params.Description }}">
+    {{ else if .IsPage }}
+    <meta name="description" property="og:description" content="{{ .Summary | plainify }}|{{ .Site.Params.Description }}">
+    {{ else }}
+    <meta name="description" property="og:description" content="{{ .Site.Params.Description }}">
+    {{ end }}
+
+    <meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}">
+    <!-- favicon & touch-icon -->
+    {{ if .Site.Params.UseIcon }}
+    <link rel="icon" href="static/images/favicon-64.png">
+    <link rel="apple-touch-icon" href="static/images/apple-touch-icon.png">
+    <link rel="mask-icon" size="any" href="/pinned-icon.svg">
+    {{ end }}
+    <!-- Twitter Card -->
+    {{ if .Site.Params.UseTwitterCard }}
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@{{ .Site.Params.Twitter }}">
+    <meta name="twitter:creator" content="@{{ .Site.Params.Twitter }}">
+    <meta name="twitter:title" content="{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}">
+    <meta name="twitter:description" content="{{ .Description | default .Summary }}|{{ .Site.Params.Description }}">
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}twitter-card.png">
+    {{ end }}
+
+
+    <link rel="stylesheet" href="{{ `assets/syntax.css` | relURL }}">
+    <link rel="stylesheet" href="{{ `assets/primer-build.css` | relURL }}">
+    <link rel="stylesheet" href="{{ `assets/style.css` | relURL }}">
+    <link rel="stylesheet" href="{{ `assets/custom_style.css` | relURL }}">
+    <meta name="google-site-verification" content="QVsO3KNzL1wLnfYFgrMNQ8qgX6KHoct41coRO-WqKsM" />
+    <!-- Google Fonts -->
+      {{ partial "google-fonts" . }}
+
+  </head>
+
+
+<body>
+
+
+  <!-- BACKGROUND COLOUR  -->
+  <body class="bg-white	">
+
+    <div id="holy" class="container-lg bg-grey h-100">
+
+      <div id="header" class="px-1 bg-#006400">
+        {{ partial "header.html" . }}
+      </div>
+
+
+
+      <div role="main" id="main" class="holy-main markdown-body px-4 bg-white">
+        {{ block "main" . }}
+        {{ end }}
+</div>
+
+
+
+      <div id="side" class="pr-1 bg-white">
+        <div id="toc" class="Box Box--blue mb-3">
+    <h4>About Me</h4>
+Hello my name is Chris and I run Wheelbarrowguide.com.
+  </div>
+        <aside class="pr-3">
+          {{ block "side" . }}
+              <!-- TOC for front page -->
+            <div id="toc" class="Box Box--blue mb-3">
+              <b>{{ .Title }}</b>
+              {{- $toc := .TableOfContents -}}
+              {{- $toc := replaceRE `<nav id="TableOfContents">\n<ul>\n<li>\n<ul>` `<nav id="TableOfContents"><ul>` $toc -}}
+              {{- $toc := replaceRE `</ul>\n</li>\n</ul>\n</nav>` `</ul>\n</nav>` $toc -}}
+              {{- safeHTML $toc -}}
+            </div>
+          </div>
+                    {{ end }}
+                  </aside>
+
+
+      <div id="footer" class="pt-2 pb-3 bg-white text-center">
+        {{ partial "footer.html" . }}
+      </div>
+    </div>
+
+    <!-- Title tags -->
+    <title itemprop="name">{{ .Title }} | {{ .Site.Title }}</title>
+    <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
+    <meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
+    <meta itemprop="name" content="{{ .Title }} | {{ .Site.Title }}" />
+    <meta name="application-name" content="{{ .Title }} | {{ .Site.Title }}" />
+    <meta property="og:site_name" content="{{ .Site.Params.sitename }}" />
+
+    <!-- Description tags -->
+
+    <meta name="description" content="{{ .Params.description }}" />
+<meta itemprop="description" content="{{ .Params.description }}" />
+<meta property="og:description" content="{{ .Params.description }}" />
+<meta name="twitter:description" content="{{ .Params.description }}" />
+
+<!-- Link tags -->
+<base href="{{ .Permalink }}" />
+<meta name="url" content="{{ .Permalink }}" />
+<meta name="twitter:url" content="{{ .Permalink }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+
+<!-- Image tags -->
+{{ with .Params.image }}
+  <meta itemprop="image" content="{{ . | absURL }}" />
+  <meta property="og:image" content="{{ . | absURL }}" />
+  <meta name="twitter:image" content="{{ . | absURL }}" />
+  <meta name="twitter:image:src" content="{{ . | absURL }}" />
+{{ else }}
+  <meta itemprop="image" content="{{ .Site.Params.ogimage | absURL }}" />
+  <meta property="og:image" content="{{ .Site.Params.ogimage | absURL }}" />
+  <meta name="twitter:image" content="{{ .Site.Params.ogimage | absURL }}" />
+  <meta name="twitter:image:src" content="{{ .Site.Params.ogimage | absURL }}" />
+{{ end }}
+
+<!-- Favicon tags -->
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="152x152" href="/favicons/favicon-152-precomposed.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/favicons/favicon-144-precomposed.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/favicons/favicon-120-precomposed.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/favicons/favicon-114-precomposed.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/favicon-180-precomposed.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/favicons/favicon-72-precomposed.png" />
+<link rel="apple-touch-icon" href="/favicons/favicon-57.png" />
+<link rel="icon" href="/favicons/favicon-32.png" sizes="32x32" />
+<link rel="icon" sizes="192x192" href="/favicons/favicon-192.png" />
+
+    {{ if or .Params.math ( default true .Site.Params.math ) }}
+    <!-- Scripts -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });</script>
+    {{ end }}
+
+
+
+    <!--- Only enable cookies for production BAS 2020-07-15 --->
+{{ if hugo.IsProduction }}
+{{ partial "cookie-notice.html" }}
+{{ end }}
+
+<!-- Google Tag Manager (2nd piece of code) (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PMQ3NR4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+
+
+
+  </body>
+
+
+</html>

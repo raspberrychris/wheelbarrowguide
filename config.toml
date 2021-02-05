@@ -1,0 +1,42 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Wheelbarrow Guide"
+theme = "hugo-primer"
+paginate = 3
+enableInlineShortcodes = true
+footnoteReturnLinkContents = "^"
+# Above are configs from hugoBasicExample
+hasCJKLanguage = true
+summaryLength = 70
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+googleAnalytics = ""
+disqusShortname=""
+copyright = "&copy;wheelbarrowguide.com 2021"
+
+[params]
+# Chose Social Sharing Buttons you want to use.
+shareTo = ["Twitter", "Hatena", "Facebook", "Pocket"]
+# You may disable copyright sentence by setting this to false.
+showFooterCredits = true
+
+description = "Describe what your web page is about"
+twitter = "@test"
+# You can use favicon by adding `favicon-64.png` to `static` directory.
+# You can also add `apple-touch-icon.png` and `pinned-icon.svg`.
+useIcon = true
+useTwitterCard = true
+# Use MathJax.js. Disabling site-wide and you still can enable in indivisual pages
+math = true
+
+sectionPagesMenu = "main"
+
+social__link = "https://twitter.com"
+
+google_fonts = [
+    ["Fira Code", "400, 700"],
+    ["Open Sans", "400, 400i, 700, 700i"]
+  ]
+
+heading_font = "Fira Code"
+body_font = "Open Sans"
