@@ -4,7 +4,7 @@ description = "Wheelbarrowguide.com is the #1 source for finding the best wheelb
 date = "2021-01-16"
 aliases = ["about"]
 author = "Wheelbarrowguide.com"
-menu = "blog"
+
 +++
 
 
