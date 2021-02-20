@@ -1,6 +1,6 @@
 +++
 title = "Cookie Policy"
-description = "Wheelbarrowguide.com is the #1 source for finding the best moses baskets"
+description = "Wheelbarrowguide.com is the #1 source for finding the best wheelbarrows"
 author = "Wheelbarrowguide.com"
 menu = "main"
 +++
@@ -8,7 +8,7 @@ menu = "main"
 
 # Cookie Policy for Wheelbarrow Guide
 
-This is the Cookie Policy for Kids Teepees, accessible from Wheelbarrowguide.com
+This is the Cookie Policy for wheelbarrowguide.com, accessible from Wheelbarrowguide.com
 
 **What Are Cookies**
 

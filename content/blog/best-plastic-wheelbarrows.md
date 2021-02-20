@@ -7,14 +7,16 @@ author = "Wheelbarrowguide.com"
 
 +++
 
+Ah, the humble and trusty wheelbarrow. A great tool to rely on for gardening.
 
-Ah, the humble and trusty wheelbarrow. A great tool to rely on for gardening. It can carry:
+It can carry:
 
-Supplies
-Tools
-Compost
-Debris
-To and from your garden with ease. It is a must-have for gardens.
+- Supplies
+- Tools
+- Compost
+- Debris
+
+To and from your garden with ease. It is a must-have for any keen gardener.
 
 The thing about the modest wheelbarrow is that it has been around for centuries. The ancient Europeans and Chinese were using them!
 
@@ -22,7 +24,8 @@ Naturally, there are many types for you to choose from. This includes plastic wh
 
 This guide will give you a quick overview of how to find the best plastic wheelbarrow for your needs.
 
-1. LOAD CAPACITY AND SPACE
+## 1. LOAD CAPACITY AND SPACE
+
 This should be the first thing you consider when buying a wheelbarrow.
 
 If you’re planning on larger jobs, you’ll have a difficult time with a shallow bucket capacity.
@@ -35,7 +38,8 @@ This can make a big difference in price.
 
 Really think about what types of projects you’re looking to tackle.
 
-2. TIRES
+## 2. TIRES
+
 Tires are an important element for your wagon. After all, it’s what allows it to travel!
 
 On a plastic wheelbarrow, you’ll typically find plastic wheels. They might have treads or they might not.
@@ -46,7 +50,8 @@ If you’re going to be moving your wheelbarrow over uneven terrain such as rock
 
 These tires will have reinforced rubber and will be filled with air. This design will allow the tires to move over uneven, rough terrain much easier due to the shock absorption they’ll provide.
 
-3. YOUR CAPABILITIES
+## 3. YOUR CAPABILITIES
+
 The capacity, space, and tires mean nothing if you’re not able to move your wheelbarrow!
 
 Compost, debris, supplies, and tools can all add up. Keep this in mind.
